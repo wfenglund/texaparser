@@ -3,7 +3,7 @@ import re
 
 # Get hand history path:
 hand_history_dir = '/home/william/.wine/drive_c/users/william/AppData/Local/PokerStars.SE/HandHistory/GoldKruger'
-hand_history_file = hand_history_dir + '/' + os.listdir(hand_history_dir)[0]
+hand_history_file = hand_history_dir + '/' + os.listdir(hand_history_dir)[-1]
 
 # Parse hand history data:
 hh_dict = {}
@@ -44,7 +44,10 @@ name_list = []
 for entry in hh_dict[hand]['prehand']:
     if entry.startswith('Plats'):
         name = re.sub(r'Plats [1-9]: ', '', entry)
-        name = re.sub(r' \([1-9]+ i marker\)', '', name)
+#         name = re.sub(r' \([1-9]+ i marker\)', '', name)
+        name = re.sub(r' \(.+ i marker\)', '', name)
+        name = re.sub(r' står över', '', name)
+        name = re.sub(r' ute ur handen \(flyttade från annat bord till small blind\)', '', name)
         name_list.append(name.strip())
 
 # Get hand inactivity and winrate:
@@ -63,7 +66,7 @@ for player in name_list:
                 if any([player in i and 'vann' in i for i in h_info['summary']]):
                     n_wins = n_wins + 1
     n_acti = n_hand - n_fold
-    activity_list = activity_list + [str(round(n_acti / n_hand, 2)) + ' (' + str(n_acti) + '/' + str(n_hand) + ')']
+    activity_list = activity_list + [str(round(n_acti / n_hand, 2)) + ' (' + str(n_acti) + '/' + str(n_hand) + ')'] if n_hand > 0 else activity_list + [str(0.0) + ' (0/0)']
     winrate_list = winrate_list + [str(round(n_wins / n_acti, 2)) + ' (' + str(n_wins) + '/' + str(n_acti) + ')'] if n_acti > 0 else winrate_list + [str(0.0) + ' (0/0)']
 
 
