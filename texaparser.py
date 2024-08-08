@@ -60,7 +60,7 @@ for player in name_list:
     for h_info in hh_dict.values():
         if any([player in i for i in h_info['summary']]):
             n_hand = n_hand + 1
-            if any([player + ' foldade innan Flopp (satsade inte)' in i for i in h_info['summary']]):
+            if any([player in i and ('foldade innan Flopp (satsade inte)' in i or 'blind) foldade innan Flopp' in i) for i in h_info['summary']]):
                 n_fold = n_fold + 1
             else:
                 if any([player in i and 'vann' in i for i in h_info['summary']]):
