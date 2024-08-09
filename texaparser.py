@@ -2,8 +2,11 @@ import os
 import re
 
 # Get hand history path:
+hh_key = ''
 hand_history_dir = '/home/william/.wine/drive_c/users/william/AppData/Local/PokerStars.SE/HandHistory/GoldKruger'
-hand_history_file = hand_history_dir + '/' + os.listdir(hand_history_dir)[-1]
+hand_history_list = os.listdir(hand_history_dir)
+hand_history_list = [i for i in hand_history_list if hh_key in i]
+hand_history_file = hand_history_dir + '/' + hand_history_list[-1]
 
 # Parse hand history data:
 hh_dict = {}
@@ -39,6 +42,35 @@ with open(hand_history_file) as hh_file:
         elif hand in hh_dict.keys():
             hh_dict[hand][state] = hh_dict[hand][state] + [row]
 
+# Color number function:
+def col_num(number, target = 'low'):
+    if target == 'low':
+        if number > 0.75:
+            number = str(number)
+            return '\x1b[0;31;40m' + number + '\x1b[0m'
+        elif number > 0.50:
+            number = str(number)
+            return '\x1b[0;33;40m' + number + '\x1b[0m'
+        elif number > 0.25:
+            number = str(number)
+            return number
+        else:
+            number = str(number)
+            return '\x1b[0;36;40m' + number + '\x1b[0m'
+    else:
+        if number < 0.25:
+            number = str(number)
+            return '\x1b[0;31;40m' + number + '\x1b[0m'
+        elif number < 0.50:
+            number = str(number)
+            return '\x1b[0;33;40m' + number + '\x1b[0m'
+        elif number < 0.75:
+            number = str(number)
+            return number
+        else:
+            number = str(number)
+            return '\x1b[0;36;40m' + number + '\x1b[0m'
+
 # Get players of last hand:
 name_list = []
 for entry in hh_dict[hand]['prehand']:
@@ -66,8 +98,8 @@ for player in name_list:
                 if any([player in i and 'vann' in i for i in h_info['summary']]):
                     n_wins = n_wins + 1
     n_acti = n_hand - n_fold
-    activity_list = activity_list + [str(round(n_acti / n_hand, 2)) + ' (' + str(n_acti) + '/' + str(n_hand) + ')'] if n_hand > 0 else activity_list + [str(0.0) + ' (0/0)']
-    winrate_list = winrate_list + [str(round(n_wins / n_acti, 2)) + ' (' + str(n_wins) + '/' + str(n_acti) + ')'] if n_acti > 0 else winrate_list + [str(0.0) + ' (0/0)']
+    activity_list = activity_list + [col_num(round(n_acti / n_hand, 2)) + ' (' + str(n_acti) + '/' + str(n_hand) + ')'] if n_hand > 0 else activity_list + [str(0.0) + ' (0/0)']
+    winrate_list = winrate_list + [col_num(round(n_wins / n_acti, 2), 'high') + ' (' + str(n_wins) + '/' + str(n_acti) + ')'] if n_acti > 0 else winrate_list + [str(0.0) + ' (0/0)']
 
 
 # Print output:
