@@ -1,5 +1,5 @@
 hh_dir='/home/william/.wine/drive_c/users/william/AppData/Local/PokerStars.SE/HandHistory/GoldKruger'
-hh_fle=`ls $hh_dir | tail -n 1`
+hh_fle=`ls -t $hh_dir | head -n 1`
 
 while true
 do
