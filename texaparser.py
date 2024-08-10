@@ -1,12 +1,10 @@
+import sys
 import os
 import re
 
-# Get hand history path:
-hh_key = ''
-hand_history_dir = '/home/william/.wine/drive_c/users/william/AppData/Local/PokerStars.SE/HandHistory/GoldKruger'
-hand_history_list = os.listdir(hand_history_dir)
-hand_history_list = [i for i in hand_history_list if hh_key in i]
-hand_history_file = hand_history_dir + '/' + hand_history_list[-1]
+# Get hand history path and file:
+hand_history_path = sys.argv[1]
+hand_history_file = hand_history_path + '/' + sys.argv[2]
 
 # Parse hand history data:
 hh_dict = {}
