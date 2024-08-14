@@ -84,10 +84,12 @@ for entry in hh_dict[hand]['prehand']:
 # Get hand inactivity and winrate:
 activity_list = []
 winrate_list = []
+raise_list = []
 for player in name_list:
     n_hand = 0
     n_fold = 0
     n_wins = 0
+    n_rais = 0
     for h_info in hh_dict.values():
         if any([player in i for i in h_info['summary']]):
             n_hand = n_hand + 1
@@ -96,19 +98,23 @@ for player in name_list:
             else:
                 if any([player in i and 'vann' in i for i in h_info['summary']]):
                     n_wins = n_wins + 1
+            # Count preflop raises:
+            if player + ': raise ' in '\t'.join(h_info['preflop']):
+                n_rais = n_rais + 1
     n_acti = n_hand - n_fold
     activity_list = activity_list + [col_num(round(n_acti / n_hand, 2)) + ' (' + str(n_acti) + '/' + str(n_hand) + ')'] if n_hand > 0 else activity_list + [str(0.0) + ' (0/0)']
     winrate_list = winrate_list + [col_num(round(n_wins / n_acti, 2), 'high') + ' (' + str(n_wins) + '/' + str(n_acti) + ')'] if n_acti > 0 else winrate_list + [str(0.0) + ' (0/0)']
+    raise_list = raise_list + [col_num(round(n_rais / n_acti, 2), 'high') + ' (' + str(n_rais) + '/' + str(n_acti) + ')'] if n_acti > 0 else raise_list + [str(0.0) + ' (0/0)']
 
 
 # Print output:
 name_list = [i.replace(player_name, "\x1b[4;34;40m" + player_name + "\x1b[0m") for i in name_list]
-print(','.join([' Player: '] + name_list))
-print(','.join([' Active:'] + activity_list))
-print(','.join(['Winrate:'] + winrate_list))
+print(','.join(['  Player: '] + name_list))
+print(','.join(['  Active:'] + activity_list))
+print(','.join([' Winrate:'] + winrate_list))
+print(','.join(['Prefl RR:'] + raise_list))
 
 # Ideas:
-# preflop bets
 # flop  bets
 # turn bets
 # river bets
