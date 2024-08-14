@@ -3,8 +3,9 @@ import os
 import re
 
 # Get hand history path and file:
-hand_history_path = sys.argv[1]
-hand_history_file = hand_history_path + '/' + sys.argv[2]
+player_name = sys.argv[1]
+hand_history_path = sys.argv[2]
+hand_history_file = hand_history_path + '/' + sys.argv[3]
 
 # Parse hand history data:
 hh_dict = {}
@@ -101,6 +102,7 @@ for player in name_list:
 
 
 # Print output:
+name_list = [i.replace(player_name, "\x1b[4;34;40m" + player_name + "\x1b[0m") for i in name_list]
 print(','.join([' Player: '] + name_list))
 print(','.join([' Active:'] + activity_list))
 print(','.join(['Winrate:'] + winrate_list))
