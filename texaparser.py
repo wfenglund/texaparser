@@ -80,6 +80,7 @@ for entry in hh_dict[hand]['prehand']:
         name = re.sub(r' står över', '', name)
         name = re.sub(r' ute ur handen \(flyttade från annat bord till small blind\)', '', name)
         name_list.append(name.strip())
+last_winner = [i for i in hh_dict[hand]['summary'] if ' vann ' in i]
 
 # Get hand inactivity and winrate:
 activity_list = []
@@ -113,6 +114,7 @@ print(','.join(['  Player: '] + name_list))
 print(','.join(['  Active:'] + activity_list))
 print(','.join([' Winrate:'] + winrate_list))
 print(','.join(['Prefl RR:'] + raise_list))
+#print(',,' + last_winner[0]) # print last hands winner
 
 # Ideas:
 # flop  bets
