@@ -82,6 +82,10 @@ for entry in hh_dict[hand]['prehand']:
         name_list.append(name.strip())
 last_winner = [i for i in hh_dict[hand]['summary'] if ' vann ' in i]
 
+# Sort players (put user first):
+player_index = name_list.index(player_name)
+name_list = name_list[player_index:] + name_list[:player_index]
+
 # Get hand inactivity and winrate:
 activity_list = []
 winrate_list = []
@@ -110,11 +114,12 @@ for player in name_list:
 
 # Print output:
 name_list = [i.replace(player_name, "\x1b[4;34;40m" + player_name + "\x1b[0m") for i in name_list]
+name_list = [i.replace(',', '.') for i in name_list]
 print(','.join(['  Player: '] + name_list))
 print(','.join(['  Active:'] + activity_list))
 print(','.join([' Winrate:'] + winrate_list))
 print(','.join(['Prefl RR:'] + raise_list))
-#print(',,' + last_winner[0]) # print last hands winner
+print(',,,,,,,,,,' + last_winner[0]) # print last hands winner
 
 # Ideas:
 # flop  bets
