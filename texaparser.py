@@ -72,19 +72,27 @@ def col_num(number, target = 'low'):
 
 # Get players of last hand:
 name_list = []
+chip_list = []
+small_blind = 1 # placeholder
+big_blind = 1 # placeholder
 for entry in hh_dict[hand]['prehand']:
     if entry.startswith('Plats'):
         name = re.sub(r'Plats [1-9]: ', '', entry)
-#         name = re.sub(r' \([1-9]+ i marker\)', '', name)
         name = re.sub(r' \(.+ i marker\)', '', name)
         name = re.sub(r' står över', '', name)
         name = re.sub(r' ute ur handen \(flyttade från annat bord till small blind\)', '', name)
         name_list.append(name.strip())
+        chip_list.append(int(re.sub(r'.+ \(', '', entry).replace(' i marker)', '')))
+    elif 'lägger small blind' in entry:
+        small_blind = int(re.sub(r'.+: lägger small blind ', '', entry)) # not used at the moment
+    elif 'lägger big blind' in entry:
+        big_blind = int(re.sub(r'.+: lägger big blind ', '', entry))
 last_winner = [i for i in hh_dict[hand]['summary'] if ' vann ' in i]
 
 # Sort players (put user first):
 player_index = name_list.index(player_name)
 name_list = name_list[player_index:] + name_list[:player_index]
+chip_list = chip_list[player_index:] + chip_list[:player_index]
 
 # Get hand inactivity and winrate:
 activity_list = []
@@ -111,11 +119,11 @@ for player in name_list:
     winrate_list = winrate_list + [col_num(round(n_wins / n_acti, 2), 'high') + ' (' + str(n_wins) + '/' + str(n_acti) + ')'] if n_acti > 0 else winrate_list + [str(0.0) + ' (0/0)']
     raise_list = raise_list + [col_num(round(n_rais / n_acti, 2), 'high') + ' (' + str(n_rais) + '/' + str(n_acti) + ')'] if n_acti > 0 else raise_list + [str(0.0) + ' (0/0)']
 
-
 # Print output:
 name_list = [i.replace(player_name, "\x1b[4;34;40m" + player_name + "\x1b[0m") for i in name_list]
 name_list = [i.replace(',', '.') for i in name_list]
-print(','.join(['  Player: '] + name_list))
+primed_names = [i + ' (' + str(round(chip_list[name_list.index(i)] / big_blind, 1)) + 'BB)' for i in name_list]
+print(','.join(['  Player: '] + primed_names))
 print(','.join(['  Active:'] + activity_list))
 print(','.join([' Winrate:'] + winrate_list))
 print(','.join(['Prefl RR:'] + raise_list))
