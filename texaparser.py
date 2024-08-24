@@ -82,7 +82,9 @@ for entry in hh_dict[hand]['prehand']:
         name = re.sub(r' står över', '', name)
         name = re.sub(r' ute ur handen \(flyttade från annat bord till small blind\)', '', name)
         name_list.append(name.strip())
-        chip_list.append(int(re.sub(r'.+ \(', '', entry).replace(' i marker)', '')))
+        chip_count = re.sub(r'.+ \(', '', entry)
+        chip_count = re.sub(r' i marker\).*', '', chip_count) # remove 'i marker' and more if the player is sitting it out
+        chip_list.append(int(chip_count))
     elif 'lägger small blind' in entry:
         small_blind = int(re.sub(r'.+: lägger small blind ', '', entry)) # not used at the moment
     elif 'lägger big blind' in entry:
@@ -127,7 +129,7 @@ print(','.join(['  Player: '] + primed_names))
 print(','.join(['  Active:'] + activity_list))
 print(','.join([' Winrate:'] + winrate_list))
 print(','.join(['Prefl RR:'] + raise_list))
-print(',,,,,,,,,,' + last_winner[0]) # print last hands winner
+# print(',,,,,,,,,,' + last_winner[0]) # print last hands winner
 
 # Ideas:
 # flop  bets
