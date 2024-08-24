@@ -86,9 +86,9 @@ for entry in hh_dict[hand]['prehand']:
         chip_count = re.sub(r' i marker\).*', '', chip_count) # remove 'i marker' and more if the player is sitting it out
         chip_list.append(int(chip_count))
     elif 'lägger small blind' in entry:
-        small_blind = int(re.sub(r'.+: lägger small blind ', '', entry)) # not used at the moment
+        small_blind = int(re.sub(r'.+: lägger small blind ', '', entry).replace(' och är all-in', '')) # not used at the moment
     elif 'lägger big blind' in entry:
-        big_blind = int(re.sub(r'.+: lägger big blind ', '', entry))
+        big_blind = int(re.sub(r'.+: lägger big blind ', '', entry).replace(' och är all-in', ''))
 last_winner = [i for i in hh_dict[hand]['summary'] if ' vann ' in i]
 
 # Sort players (put user first):
