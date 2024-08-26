@@ -78,12 +78,12 @@ big_blind = 1 # placeholder
 for entry in hh_dict[hand]['prehand']:
     if entry.startswith('Plats'):
         name = re.sub(r'Plats [1-9]: ', '', entry)
-        name = re.sub(r' \(.+ i marker\)', '', name)
+        name = re.sub(r' \(.+ i marker.*', '', name)
         name = re.sub(r' står över', '', name)
         name = re.sub(r' ute ur handen \(flyttade från annat bord till small blind\)', '', name)
         name_list.append(name.strip())
         chip_count = re.sub(r'.+ \(', '', entry)
-        chip_count = re.sub(r' i marker\).*', '', chip_count) # remove 'i marker' and more if the player is sitting it out
+        chip_count = re.sub(r' i marker.*', '', chip_count) # remove 'i marker' and more if the player is sitting it out
         chip_list.append(float(chip_count.replace('$', '')))
     elif 'lägger small blind' in entry:
         small_blind = float(re.sub(r'.+: lägger small blind ', '', entry).replace(' och är all-in', '').replace('$', '')) # not used at the moment
