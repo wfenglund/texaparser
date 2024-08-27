@@ -101,12 +101,15 @@ activity_list = []
 winrate_list = []
 raise_list = []
 ffold_list = []
+fbets_list = []
 for player in name_list:
     n_hand = 0 # hands played
     n_muck = 0 # hands thrown before flop
     n_wins = 0 # played hands won
     n_rais = 0 # hands raised before flop
+    n_flop = 0 # flops seen
     n_fold = 0 # hands folded on flop
+    n_bets = 0 # hands bet on flop
     for h_info in hh_dict.values():
         if any([player in i for i in h_info['summary']]):
             n_hand = n_hand + 1
@@ -118,14 +121,21 @@ for player in name_list:
             # Count preflop raises:
             if player + ': raise ' in '\t'.join(h_info['preflop']):
                 n_rais = n_rais + 1
-            if 'flop' in h_info.keys():
+            # Count flops:
+            if 'flop' in h_info.keys() and player in '\t'.join(h_info['flop']):
+                n_flop = n_flop + 1
+                # Count flops folded:
                 if player + ': fold' in '\t'.join(h_info['flop']):
                     n_fold = n_fold + 1
+                # Count flops bet on:
+                elif player + ': bet ' in '\t'.join(h_info['flop']):
+                    n_bets = n_bets + 1
     n_acti = n_hand - n_muck
     activity_list = activity_list + [col_num(round(n_acti / n_hand, 2)) + ' (' + str(n_acti) + '/' + str(n_hand) + ')'] if n_hand > 0 else activity_list + [str(0.0) + ' (0/0)']
     winrate_list = winrate_list + [col_num(round(n_wins / n_acti, 2), 'high') + ' (' + str(n_wins) + '/' + str(n_acti) + ')'] if n_acti > 0 else winrate_list + [str(0.0) + ' (0/0)']
     raise_list = raise_list + [col_num(round(n_rais / n_acti, 2), 'high') + ' (' + str(n_rais) + '/' + str(n_acti) + ')'] if n_acti > 0 else raise_list + [str(0.0) + ' (0/0)']
-    ffold_list = ffold_list + [col_num(round(n_fold / n_acti, 2), 'low') + ' (' + str(n_fold) + '/' + str(n_acti) + ')'] if n_acti > 0 else ffold_list + [str(0.0) + ' (0/0)']
+    ffold_list = ffold_list + [col_num(round(n_fold / n_flop, 2), 'low') + ' (' + str(n_fold) + '/' + str(n_flop) + ')'] if n_flop > 0 else ffold_list + [str(0.0) + ' (0/0)']
+    fbets_list = fbets_list + [col_num(round(n_bets / n_flop, 2), 'low') + ' (' + str(n_bets) + '/' + str(n_flop) + ')'] if n_flop > 0 else fbets_list + [str(0.0) + ' (0/0)']
 
 # Print output:
 name_list = [i.replace(player_name, "\x1b[4;34;40m" + player_name + "\x1b[0m") for i in name_list]
@@ -136,6 +146,7 @@ print(','.join([' Active:'] + activity_list))
 print(','.join(['Winrate:'] + winrate_list))
 print(','.join(['Prfl RR:'] + raise_list))
 print(','.join(['Pofl FR:'] + ffold_list))
+print(','.join(['Pofl BR:'] + fbets_list))
 # print(',,,,,,,,,,' + last_winner[0]) # print last hands winner
 
 # Ideas:
