@@ -135,7 +135,7 @@ for player in name_list:
     winrate_list = winrate_list + [col_num(round(n_wins / n_acti, 2), 'high') + ' (' + str(n_wins) + '/' + str(n_acti) + ')'] if n_acti > 0 else winrate_list + [str(0.0) + ' (0/0)']
     raise_list = raise_list + [col_num(round(n_rais / n_acti, 2), 'high') + ' (' + str(n_rais) + '/' + str(n_acti) + ')'] if n_acti > 0 else raise_list + [str(0.0) + ' (0/0)']
     ffold_list = ffold_list + [col_num(round(n_fold / n_flop, 2), 'low') + ' (' + str(n_fold) + '/' + str(n_flop) + ')'] if n_flop > 0 else ffold_list + [str(0.0) + ' (0/0)']
-    fbets_list = fbets_list + [col_num(round(n_bets / n_flop, 2), 'low') + ' (' + str(n_bets) + '/' + str(n_flop) + ')'] if n_flop > 0 else fbets_list + [str(0.0) + ' (0/0)']
+    fbets_list = fbets_list + [col_num(round(n_bets / n_flop, 2), 'high') + ' (' + str(n_bets) + '/' + str(n_flop) + ')'] if n_flop > 0 else fbets_list + [str(0.0) + ' (0/0)']
 
 # Print output:
 name_list = [i.replace(player_name, "\x1b[4;34;40m" + player_name + "\x1b[0m") for i in name_list]
