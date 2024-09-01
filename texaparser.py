@@ -103,6 +103,7 @@ winrate_list = []
 raise_list = []
 ffold_list = []
 fbets_list = []
+vpip_list = []
 for player in name_list:
     n_hand = 0 # hands played
     n_call = 0 # number of calls
@@ -115,7 +116,12 @@ for player in name_list:
     n_fold = 0 # hands folded on flop
     n_chks = 0 # hands checked on flop
     n_flbt = 0 # hands bet on flop
+    n_walk = 0 # number of wins uncontested
+    n_vpip = 0 # number of times money was put in pot
     for h_info in hh_dict.values():
+        hand_call = 0
+        hand_rais = 0
+        hand_bets = 0
         # If player in hand:
         if any([player in i for i in h_info['summary']]):
             # Count hand:
@@ -131,8 +137,8 @@ for player in name_list:
             if player + ': raise ' in '\t'.join(h_info['preflop']):
                 n_pfrs = n_pfrs + 1
             # Count total preflop calls and raises:
-            n_call = sum([1 for i in h_info['preflop'] if player + ': call ' in i]) + n_call
-            n_rais = sum([1 for i in h_info['preflop'] if player + ': raise ' in i]) + n_call
+            hand_call = sum([1 for i in h_info['preflop'] if player + ': call ' in i])
+            hand_rais = sum([1 for i in h_info['preflop'] if player + ': raise ' in i])
             # Count flops:
             if 'flop' in h_info.keys():
                 # Flatten flop list to increase effectiveness of later checks
@@ -149,22 +155,42 @@ for player in name_list:
                     elif player + ': bet ' in flat_flop:
                         n_flbt = n_flbt + 1
                     # Count total flop calls, bets and raises:
-                    n_call = sum([1 for i in h_info['flop'] if player + ': call ' in i]) + n_call
-                    n_bets = sum([1 for i in h_info['flop'] if player + ': bet ' in i]) + n_bets
-                    n_rais = sum([1 for i in h_info['flop'] if player + ': raise ' in i]) + n_rais
+                    hand_call = sum([1 for i in h_info['flop'] if player + ': call ' in i]) + hand_call
+                    hand_bets = sum([1 for i in h_info['flop'] if player + ': bet ' in i]) + hand_bets
+                    hand_rais = sum([1 for i in h_info['flop'] if player + ': raise ' in i]) + hand_rais
                     if 'turn' in h_info.keys():
                         # Count total turn calls:
-                        n_call = sum([1 for i in h_info['turn'] if player + ': call ' in i]) + n_call
-                        n_bets = sum([1 for i in h_info['turn'] if player + ': bet ' in i]) + n_bets
-                        n_rais = sum([1 for i in h_info['turn'] if player + ': raise ' in i]) + n_rais
+                        hand_call = sum([1 for i in h_info['turn'] if player + ': call ' in i]) + hand_call
+                        hand_bets = sum([1 for i in h_info['turn'] if player + ': bet ' in i]) + hand_bets
+                        hand_rais = sum([1 for i in h_info['turn'] if player + ': raise ' in i]) + hand_rais
                         if 'river' in h_info.keys():
                             # Count total river calls:
-                            n_call = sum([1 for i in h_info['river'] if player + ': call ' in i]) + n_call
-                            n_bets = sum([1 for i in h_info['river'] if player + ': bet ' in i]) + n_bets
-                            n_rais = sum([1 for i in h_info['river'] if player + ': raise ' in i]) + n_rais
+                            hand_call = sum([1 for i in h_info['river'] if player + ': call ' in i]) + hand_call
+                            hand_bets = sum([1 for i in h_info['river'] if player + ': bet ' in i]) + hand_bets
+                            hand_rais = sum([1 for i in h_info['river'] if player + ': raise ' in i]) + hand_rais
+            else: # if no flop
+                # Check if pot was won uncontested:
+                walk_bools = []
+                for entry in h_info['summary']:
+                    if entry.startswith('Plats') and player not in entry:
+                        walk_bools = walk_bools + [('foldade innan Flopp (satsade inte)' in entry) or ('blind) foldade innan Flopp' in entry)]
+                    elif player in entry:
+                        walk_bools = walk_bools + [player + ' (big blind)' in entry]
+                if all(walk_bools):
+                    n_walk = n_walk + 1
+            # Check if money was put into pot voluntarily:
+            if (hand_call + hand_rais + hand_bets) > 0:
+                n_vpip = n_vpip + 1
+            # Add temporary counts to player counts:
+            n_call = n_call + hand_call
+            n_rais = n_rais + hand_rais
+            n_bets = n_bets + hand_bets
+
 
     n_acti = n_hand - n_muck
     activity_list = activity_list + [col_num(round(n_acti / n_hand, 2)) + ' (' + str(n_acti) + '/' + str(n_hand) + ')'] if n_hand > 0 else activity_list + [str(0.0) + ' (0/0)']
+    n_actual = n_hand - n_walk
+    vpip_list = vpip_list + [col_num(round(n_vpip / n_actual, 2)) + ' (' + str(n_vpip) + '/' + str(n_actual) + ')'] if n_actual > 0 else vpip_list + [str(0.0) + ' (0/0)']
     n_aggr = n_bets + n_rais
     aggr_list = aggr_list + [col_num(round(n_aggr / n_call, 2)) + ' (' + str(n_aggr) + '/' + str(n_call) + ')'] if n_call > 0 else aggr_list + [str(0.0) + ' (0/0)']
     winrate_list = winrate_list + [col_num(round(n_wins / n_acti, 2), 'high') + ' (' + str(n_wins) + '/' + str(n_acti) + ')'] if n_acti > 0 else winrate_list + [str(0.0) + ' (0/0)']
@@ -179,6 +205,7 @@ name_list = [i.replace(',', '.') for i in name_list]
 primed_names = [i + ' (' + str(round(chip_list[name_list.index(i)] / big_blind, 1)) + 'BB)' for i in name_list]
 print(','.join([' Player:'] + primed_names))
 print(','.join([' Active:'] + activity_list))
+print(','.join(['  VP$IP:'] + vpip_list))
 print(','.join(['  Aggro:'] + aggr_list))
 print(','.join(['Winrate:'] + winrate_list))
 print(','.join(['Prfl RR:'] + raise_list))
