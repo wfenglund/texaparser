@@ -109,7 +109,6 @@ for player in name_list:
     n_call = 0 # number of calls
     n_rais = 0 # number of raises
     n_bets = 0 # number of bets
-#     n_muck = 0 # hands thrown before flop
     n_wins = 0 # played hands won
     n_pfrs = 0 # hands raised before flop
     n_flop = 0 # flops seen
@@ -119,6 +118,7 @@ for player in name_list:
     n_walk = 0 # number of wins uncontested
     n_vpip = 0 # number of times money was put in pot
     for h_info in hh_dict.values():
+        # Initiate temporary counters:
         hand_call = 0
         hand_rais = 0
         hand_bets = 0
@@ -126,19 +126,15 @@ for player in name_list:
         if any([player in i for i in h_info['summary']]):
             # Count hand:
             n_hand = n_hand + 1
-            # Count mucks:
-#             if any([player in i and ('foldade innan Flopp (satsade inte)' in i or 'blind) foldade innan Flopp' in i) for i in h_info['summary']]):
-#                 n_muck = n_muck + 1
-#             else:
             # Count wins:
             if any([player in i and 'vann' in i for i in h_info['summary']]):
                 n_wins = n_wins + 1
-            # Count preflops raised:
-            if player + ': raise ' in '\t'.join(h_info['preflop']):
-                n_pfrs = n_pfrs + 1
             # Count total preflop calls and raises:
             hand_call = sum([1 for i in h_info['preflop'] if player + ': call ' in i])
             hand_rais = sum([1 for i in h_info['preflop'] if player + ': raise ' in i])
+            # Count preflops raised:
+            if hand_rais > 0: # if flop was waised at least once
+                n_pfrs = n_pfrs + 1
             # Count flops:
             if 'flop' in h_info.keys():
                 # Flatten flop list to increase effectiveness of later checks
@@ -186,9 +182,7 @@ for player in name_list:
             n_rais = n_rais + hand_rais
             n_bets = n_bets + hand_bets
 
-
-#     n_acti = n_hand - n_muck
-#     activity_list = activity_list + [col_num(round(n_acti / n_hand, 2)) + ' (' + str(n_acti) + '/' + str(n_hand) + ')'] if n_hand > 0 else activity_list + [str(0.0) + ' (0/0)']
+    # Calculate statistics:
     n_actual = n_hand - n_walk
     vpip_list = vpip_list + [col_num(round(n_vpip / n_actual, 2)) + ' (' + str(n_vpip) + '/' + str(n_actual) + ')'] if n_actual > 0 else vpip_list + [str(0.0) + ' (0/0)']
     n_aggr = n_bets + n_rais
@@ -212,8 +206,3 @@ print(','.join(['Prfl RR:'] + raise_list))
 print(','.join(['Pofl FR:'] + ffold_list))
 print(','.join(['Pofl BR:'] + fbets_list))
 # print(',,,,,,,,,,' + last_winner[0]) # print last hands winner
-
-# Ideas:
-# flop  bets
-# turn bets
-# river bets
