@@ -109,7 +109,7 @@ for player in name_list:
     n_call = 0 # number of calls
     n_rais = 0 # number of raises
     n_bets = 0 # number of bets
-    n_muck = 0 # hands thrown before flop
+#     n_muck = 0 # hands thrown before flop
     n_wins = 0 # played hands won
     n_pfrs = 0 # hands raised before flop
     n_flop = 0 # flops seen
@@ -127,12 +127,12 @@ for player in name_list:
             # Count hand:
             n_hand = n_hand + 1
             # Count mucks:
-            if any([player in i and ('foldade innan Flopp (satsade inte)' in i or 'blind) foldade innan Flopp' in i) for i in h_info['summary']]):
-                n_muck = n_muck + 1
-            else:
-                # Count wins:
-                if any([player in i and 'vann' in i for i in h_info['summary']]):
-                    n_wins = n_wins + 1
+#             if any([player in i and ('foldade innan Flopp (satsade inte)' in i or 'blind) foldade innan Flopp' in i) for i in h_info['summary']]):
+#                 n_muck = n_muck + 1
+#             else:
+            # Count wins:
+            if any([player in i and 'vann' in i for i in h_info['summary']]):
+                n_wins = n_wins + 1
             # Count preflops raised:
             if player + ': raise ' in '\t'.join(h_info['preflop']):
                 n_pfrs = n_pfrs + 1
@@ -169,7 +169,7 @@ for player in name_list:
                             hand_bets = sum([1 for i in h_info['river'] if player + ': bet ' in i]) + hand_bets
                             hand_rais = sum([1 for i in h_info['river'] if player + ': raise ' in i]) + hand_rais
             else: # if no flop
-                # Check if pot was won uncontested:
+                # Check if pot was won uncontested as big blind:
                 walk_bools = []
                 for entry in h_info['summary']:
                     if entry.startswith('Plats') and player not in entry:
@@ -187,14 +187,14 @@ for player in name_list:
             n_bets = n_bets + hand_bets
 
 
-    n_acti = n_hand - n_muck
-    activity_list = activity_list + [col_num(round(n_acti / n_hand, 2)) + ' (' + str(n_acti) + '/' + str(n_hand) + ')'] if n_hand > 0 else activity_list + [str(0.0) + ' (0/0)']
+#     n_acti = n_hand - n_muck
+#     activity_list = activity_list + [col_num(round(n_acti / n_hand, 2)) + ' (' + str(n_acti) + '/' + str(n_hand) + ')'] if n_hand > 0 else activity_list + [str(0.0) + ' (0/0)']
     n_actual = n_hand - n_walk
     vpip_list = vpip_list + [col_num(round(n_vpip / n_actual, 2)) + ' (' + str(n_vpip) + '/' + str(n_actual) + ')'] if n_actual > 0 else vpip_list + [str(0.0) + ' (0/0)']
     n_aggr = n_bets + n_rais
     aggr_list = aggr_list + [col_num(round(n_aggr / n_call, 2)) + ' (' + str(n_aggr) + '/' + str(n_call) + ')'] if n_call > 0 else aggr_list + [str(0.0) + ' (0/0)']
-    winrate_list = winrate_list + [col_num(round(n_wins / n_acti, 2), 'high') + ' (' + str(n_wins) + '/' + str(n_acti) + ')'] if n_acti > 0 else winrate_list + [str(0.0) + ' (0/0)']
-    raise_list = raise_list + [col_num(round(n_pfrs / n_acti, 2), 'high') + ' (' + str(n_pfrs) + '/' + str(n_acti) + ')'] if n_acti > 0 else raise_list + [str(0.0) + ' (0/0)']
+    winrate_list = winrate_list + [col_num(round(n_wins / n_actual, 2), 'high') + ' (' + str(n_wins) + '/' + str(n_actual) + ')'] if n_actual > 0 else winrate_list + [str(0.0) + ' (0/0)']
+    raise_list = raise_list + [col_num(round(n_pfrs / n_actual, 2), 'high') + ' (' + str(n_pfrs) + '/' + str(n_actual) + ')'] if n_actual > 0 else raise_list + [str(0.0) + ' (0/0)']
     ffold_list = ffold_list + [col_num(round(n_fold / n_flop, 2), 'low') + ' (' + str(n_fold) + '/' + str(n_flop) + ')'] if n_flop > 0 else ffold_list + [str(0.0) + ' (0/0)']
     n_btab = n_chks + n_flbt # number of flops which could have been bet on
     fbets_list = fbets_list + [col_num(round(n_flbt / n_btab, 2), 'high') + ' (' + str(n_flbt) + '/' + str(n_btab) + ')'] if n_btab > 0 else fbets_list + [str(0.0) + ' (0/0)']
@@ -204,7 +204,7 @@ name_list = [i.replace(player_name, "\x1b[4;34;40m" + player_name + "\x1b[0m") f
 name_list = [i.replace(',', '.') for i in name_list]
 primed_names = [i + ' (' + str(round(chip_list[name_list.index(i)] / big_blind, 1)) + 'BB)' for i in name_list]
 print(','.join([' Player:'] + primed_names))
-print(','.join([' Active:'] + activity_list))
+# print(','.join([' Active:'] + activity_list))
 print(','.join(['  VP$IP:'] + vpip_list))
 print(','.join(['  Aggro:'] + aggr_list))
 print(','.join(['Winrate:'] + winrate_list))
