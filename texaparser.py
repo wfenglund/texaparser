@@ -97,7 +97,6 @@ name_list = name_list[player_index:] + name_list[:player_index]
 chip_list = chip_list[player_index:] + chip_list[:player_index]
 
 # Get hand inactivity and winrate:
-activity_list = []
 aggr_list = []
 winrate_list = []
 raise_list = []
@@ -174,6 +173,7 @@ for player in name_list:
                         walk_bools = walk_bools + [player + ' (big blind)' in entry]
                 if all(walk_bools):
                     n_walk = n_walk + 1
+                    n_wins = n_wins - 1 # remove win since it is a walk
             # Check if money was put into pot voluntarily:
             if (hand_call + hand_rais + hand_bets) > 0:
                 n_vpip = n_vpip + 1
