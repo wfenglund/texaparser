@@ -1,0 +1,8 @@
+position	bb	rfi
+utg	60	"AA-44, AKs-A3s, KQs-K8s, QJs-Q9s, JTs-J9s, T9s, AKo-ATo, KQo: raise;33-22, K6s, T8s, 98s, 87s, 76s, 65s, Kjo: raise/fold"
+utg1	60	"AA-44, AKs-A3s, KQs-K8s, QJs-Q9s, JTs-J9s, T9s-T8s, 98s, AKo-ATo, KQo-KJo: raise;33-22, K7s-K6s, 87s, 76s, 65s, Kto, Qjo: raise/fold"
+mp	60	"AA-22, AKs-A2s, KQs-K6s, QJs-Q9s, JTs-J8s, T9s-T8s, 98s, 87s, 76s, AKo-ATo, Kqo-Kto, QJo: raise;K5s, Q8s, 97s, 65s, 54s, A9o, Qto, Jto: raise/fold"
+hj	60	"AA-22, AKs-A2s, KQs-K4s, QJs-Q8s, JTs-J8s, T9s-T7s, 98s-97s, 87s-86s, 76s, 65s, 54s, AKo-A8o, Kqo-Kto, Qjo-Qto, JTo: raise;Q7s-Q6s: raise/fold"
+co	60	"AA-22, AKs-A2s, KQs-K2s, QJs-Q4s, JTs-J6s, T9s-T6s, 98s-96s, 87s-86s, 76s-75s, 65s, 54s, Ako-A7o, A5o, Kqo-K9o, Qjo-Qto, Jto-J9o, T9o: raise;64s, A6o, K8o, Q9o: raise/fold"
+btn	60	"AA-22, AKs-A2s, KQs-K2s, QJs-Q2s, JTs-J2s, T9s-T3s, 98s-95s, 87s-85s, 76s-74s, 65s-64s, 54s-53s, 43s, Ako-A2o, Kqo-K5o, Qjo-Q8o, Jto-J8o, T9o-T8o, 98o, 87o: raise;T7o, 97o: raise/fold"
+sb	60	"Ats, Kqs: raise;AA-33, Aks-Ajs, A9s-A2s, Kjs-K4s, Qjs-Q5s, Jts-J2s, T9s-T2s, 98s-94s, 87s-84s, 76s-74s, 65s-63s, 54s-53s, 43s, Ako, Ajo-A5o, Kqo-Kjo, K9o-K5o, Qjo-Q7o, Jto-J8o, T9o-T7o, 98o-97o: call/raise;22, K3s-K2s, Q4s-Q2s, 93s-92s, 83s-82s, 73s, 52s, 42s, Aqo, A4o-A2o, Kto, K4o-K2o, Q6o-Q2o, J7o-J3o, T6o-T5o, 96o, 86o-85o, 76o-75o, 65o: call;72s, 62s, 32s, 95o, 54o: call/fold"
