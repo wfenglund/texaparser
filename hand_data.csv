@@ -1,38 +1,170 @@
-hand,sb_15_rfi,bn_15_rfi,co_15_rfi,hj_15_rfi
-AA,Limp,Raise 2x,Raise 2x,Raise 2x
-KK,Limp,Raise 2x,Raise 2x,Raise 2x
-QQ,Limp,Raise 2x,Raise 2x,Raise 2x
-JJ,Limp,Raise 2x,Raise 2x,Raise 2x
-TT,Limp,Raise 2x,Raise 2x,Raise 2x
-99,Limp,Raise 2x,Raise 2x,Raise 2x
-88,Limp,Raise 2x,Raise 2x,Raise 2x
-77,60% All-in 40% limp,30% All-in 70% Raise 2x,50% All-in 50% Raise 2x,10% All-in 90% Raise 2x
-66,All-in,All-in,All-in,90% All-in 10% Raise 2x
-55,All-in,All-in,All-in,All-in
-44,All-in,All-in,All-in,All-in
-33,All-in,All-in,All-in,60% All-in 40% Fold
-22,All-in,All-in,All-in,Fold
-AKs,Limp,Raise 2x,Raise 2x,Raise 2x
-AQs,Limp,Raise 2x,Raise 2x,Raise 2x
-AJs,Limp,Raise 2x,Raise 2x,Raise 2x
-ATs,10% All-in 90% limp,Raise 2x,Raise 2x,Raise 2x
-A9s,60% All-in 40% limp,60% All-in 40% Raise 2x,Raise 2x,Raise 2x
-A8s,60% All-in 40% limp,50% All-in 50% Raise 2x,Raise 2x,Raise 2x
-A7s,50% All-in 50% limp,60% All-in 40% Raise 2x,Raise 2x,50% All-in 50% Raise 2x
-A6s,Limp,80% All-in 20% Raise 2x,All-in,Raise 2x
-A5s,Limp,80% All-in 20% Raise 2x,All-in,All-in
-A4s,Limp,All-in,All-in,90% All-in 10% Raise 2x
-A3s,Limp,All-in,All-in,30% All-in 70% Raise 2x
-A2s,20% All-in 80% limp,All-in,All-in,70% Raise 2x 30% Fold
-AKo,90% All-in 10% limp,10% All-in 90% Raise 2x,Raise 2x,Raise 2x
-AQo,All-in,60% All-in 40% Raise 2x,80% All-in 20% Raise 2x,90% All-in 10% Raise 2x
-QJo,All-in,All-in,All-in,80% All-in 20% Raise 2x
-ATo,All-in,All-in,All-in,70% All-in 30% Raise 2x
-A9o,All-in,All-in,All-in,60% All-in 40% Raise 2x
-A8o,All-in,All-in,All-in,Raise 2x
-A7o,All-in,All-in,80% All-in 20% Raise 2x,60% Raise 2x 40% Fold
-A6o,All-in,All-in,Raise 2x,Fold
-A5o,All-in,All-in,40% All-in 60% Raise 2x,Fold
-A4o,All-in,All-in,50% Raise 2x 50% Fold,Fold
-A3o,All-in,90% All-in 10% Raise 2x,Fold,Fold
-A2o,All-in,80% All-in 20% Raise 2x,Fold,Fold
+hand,sb_15_rfi,bn_15_rfi,co_15_rfi,hj_15_rfi,lj_15_rfi
+AA,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x
+AKs,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x
+AQs,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x
+AJs,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x
+ATs,10% All-in 90% limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x
+A9s,60% All-in 40% limp,60% All-in 40% Raise 2x,Raise 2x,Raise 2x,60% All-in 40% Raise 2x
+A8s,60% All-in 40% limp,50% All-in 50% Raise 2x,Raise 2x,Raise 2x,40% All-in 60% Raise 2x
+A7s,50% All-in 50% limp,60% All-in 40% Raise 2x,Raise 2x,50% All-in 50% Raise 2x,Raise 2x
+A6s,Limp,80% All-in 20% Raise 2x,All-in,Raise 2x,Raise 2x
+A5s,Limp,80% All-in 20% Raise 2x,All-in,All-in,Raise 2x
+A4s,Limp,All-in,All-in,90% All-in 10% Raise 2x,Raise 2x
+A3s,Limp,All-in,All-in,30% All-in 70% Raise 2x,30% Raise 2x 70% Fold
+A2s,20% All-in 80% limp,All-in,All-in,70% Raise 2x 30% Fold,Fold
+AKo,90% All-in 10% limp,10% All-in 90% Raise 2x,Raise 2x,Raise 2x,10% All-in 90% Raise 2x
+KK,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x
+KQs,,,,Raise 2x,Raise 2x
+KJs,,,,All-in,All-in
+KTs,,,,All-in,All-in
+K9s,,,,Raise 2x,Raise 2x
+K8s,,,,Raise 2x,90% Raise 2x 10% Fold
+K7s,,,,40% Raise 2x 60% Fold,30% Raise 2x 70% Fold
+K6s,,,,Fold,Fold
+K5s,,,,Fold,Fold
+K4s,,,,Fold,Fold
+K3s,,,,Fold,Fold
+K2s,,,,Fold,Fold
+AQo,All-in,60% All-in 40% Raise 2x,80% All-in 20% Raise 2x,90% All-in 10% Raise 2x,90% All-in 10% Raise 2x
+KQo,,,,80% All-in 20% Raise 2x,60% All-in 40% Raise 2x
+QQ,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x
+QJs,,,,All-in,All-in
+QTs,,,,All-in,70% All-in 30% Raise 2x
+Q9s,,,,Raise 2x,Raise 2x
+Q8s,,,,Raise 2x,50% Raise 2x 50% Fold
+Q7s,,,,Fold,Fold
+Q6s,,,,Fold,Fold
+Q5s,,,,Fold,Fold
+Q4s,,,,Fold,Fold
+Q3s,,,,Fold,Fold
+Q2s,,,,Fold,Fold
+AJo,All-in,All-in,All-in,80% All-in 20% Raise 2x,70% All-in 30% Raise 2x
+KJo,,,,Raise 2x,Raise 2x
+QJo,,,,Raise 2x,Raise 2x
+JJ,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x
+JTs,,,,All-in,All-in
+J9s,,,,Raise 2x,Raise 2x
+J8s,,,,Fold,Fold
+J7s,,,,Fold,Fold
+J6s,,,,Fold,Fold
+J5s,,,,Fold,Fold
+J4s,,,,Fold,Fold
+J3s,,,,Fold,Fold
+J2s,,,,Fold,Fold
+ATo,All-in,All-in,All-in,70% All-in 30% Raise 2x,30% All-in 70% Raise 2x
+KTo,,,,Raise 2x,90% Raise 2x 10% Fold
+QTo,,,,Raise 2x,70% Raise 2x 30% Fold
+JTo,,,,70% Raise 2x 30% Fold,<10% Raise 2x >90% Fold
+TT,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x
+T9s,,,,60% All-in 40% Raise 2x,Raise 2x
+T8s,,,,Fold,Fold
+T7s,,,,Fold,Fold
+T6s,,,,Fold,Fold
+T5s,,,,Fold,Fold
+T4s,,,,Fold,Fold
+T3s,,,,Fold,Fold
+T2s,,,,Fold,Fold
+A9o,All-in,All-in,All-in,60% All-in 40% Raise 2x,Raise 2x
+K9o,,,,Fold,Fold
+Q9o,,,,Fold,Fold
+J9o,,,,Fold,Fold
+T9o,,,,Fold,Fold
+99,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x
+98s,,,,Fold,Fold
+97s,,,,Fold,Fold
+96s,,,,Fold,Fold
+95s,,,,Fold,Fold
+94s,,,,Fold,Fold
+93s,,,,Fold,Fold
+92s,,,,Fold,Fold
+A8o,All-in,All-in,All-in,Raise 2x,40% Raise 2x 60% Fold
+K8o,,,,Fold,Fold
+Q8o,,,,Fold,Fold
+J8o,,,,Fold,Fold
+T8o,,,,Fold,Fold
+98o,,,,Fold,Fold
+88,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x
+87s,,,,Fold,Fold
+86s,,,,Fold,Fold
+85s,,,,Fold,Fold
+84s,,,,Fold,Fold
+83s,,,,Fold,Fold
+82s,,,,Fold,Fold
+A7o,All-in,All-in,80% All-in 20% Raise 2x,60% Raise 2x 40% Fold,Fold
+K7o,,,,Fold,Fold
+Q7o,,,,Fold,Fold
+J7o,,,,Fold,Fold
+T7o,,,,Fold,Fold
+97o,,,,Fold,Fold
+87o,,,,Fold,Fold
+77,60% All-in 40% limp,30% All-in 70% Raise 2x,50% All-in 50% Raise 2x,10% All-in 90% Raise 2x,30% All-in 70% Raise 2x
+76s,,,,Fold,Fold
+75s,,,,Fold,Fold
+74s,,,,Fold,Fold
+73s,,,,Fold,Fold
+72s,,,,Fold,Fold
+A6o,All-in,All-in,Raise 2x,Fold,Fold
+K6o,,,,Fold,Fold
+Q6o,,,,Fold,Fold
+J6o,,,,Fold,Fold
+T6o,,,,Fold,Fold
+96o,,,,Fold,Fold
+86o,,,,Fold,Fold
+76o,,,,Fold,Fold
+66,All-in,All-in,All-in,90% All-in 10% Raise 2x,60% All-in 40% Raise 2x
+65s,,,,Fold,Fold
+64s,,,,Fold,Fold
+63s,,,,Fold,Fold
+62s,,,,Fold,Fold
+A5o,All-in,All-in,40% All-in 60% Raise 2x,Fold,Fold
+K5o,,,,Fold,Fold
+Q5o,,,,Fold,Fold
+J5o,,,,Fold,Fold
+T5o,,,,Fold,Fold
+95o,,,,Fold,Fold
+85o,,,,Fold,Fold
+75o,,,,Fold,Fold
+65o,,,,Fold,Fold
+55,All-in,All-in,All-in,All-in,70% All-in 30% Raise 2x
+54s,,,,Fold,Fold
+53s,,,,Fold,Fold
+52s,,,,Fold,Fold
+A4o,All-in,All-in,50% Raise 2x 50% Fold,Fold,Fold
+K4o,,,,Fold,Fold
+Q4o,,,,Fold,Fold
+J4o,,,,Fold,Fold
+T4o,,,,Fold,Fold
+94o,,,,Fold,Fold
+84o,,,,Fold,Fold
+74o,,,,Fold,Fold
+64o,,,,Fold,Fold
+54o,,,,Fold,Fold
+44,All-in,All-in,All-in,All-in,Fold
+43s,,,,Fold,Fold
+42s,,,,Fold,Fold
+A3o,All-in,90% All-in 10% Raise 2x,Fold,Fold,Fold
+K3o,,,,Fold,Fold
+Q3o,,,,Fold,Fold
+J3o,,,,Fold,Fold
+T3o,,,,Fold,Fold
+93o,,,,Fold,Fold
+83o,,,,Fold,Fold
+73o,,,,Fold,Fold
+63o,,,,Fold,Fold
+53o,,,,Fold,Fold
+43o,,,,Fold,Fold
+33,All-in,All-in,All-in,60% All-in 40% Fold,Fold
+32s,,,,Fold,Fold
+A2o,All-in,80% All-in 20% Raise 2x,Fold,Fold,Fold
+K2o,,,,Fold,Fold
+Q2o,,,,Fold,Fold
+J2o,,,,Fold,Fold
+T2o,,,,Fold,Fold
+92o,,,,Fold,Fold
+82o,,,,Fold,Fold
+72o,,,,Fold,Fold
+62o,,,,Fold,Fold
+52o,,,,Fold,Fold
+42o,,,,Fold,Fold
+32o,,,,Fold,Fold
+22,All-in,All-in,All-in,Fold,Fold
