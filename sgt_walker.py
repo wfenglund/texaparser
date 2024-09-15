@@ -1,22 +1,26 @@
 print('Welcome to Sgt Walker - The Texas (Holdem Starting Hand) Ranger')
 
-with open('walker_data.csv') as walker_input:
-    counter = 0
+with open('hand_data.csv') as walker_input:
     walker_data = {}
     for line in walker_input:
-        if counter == 0:
-            counter = 1
-            continue
-        else:
-            walker_data[line.split('\t')[0]] = [line.split('\t')[1], line.split('\t')[2]]
+        walker_data[line.split(',')[0]] = line.split(',')[1:]
 
-player_pos = input('Position> ')
+player_hand = input('Hand> ')
 
-if player_pos in walker_data.keys():
-    range_list = walker_data[player_pos][1].replace('"', '').split(';')
-    if len(range_list) == 2:
-        print(f'{player_pos}:\n{range_list[0]}\n{range_list[1]}')
-    if len(range_list) == 3:
-        print(f'{player_pos}:\n{range_list[0]}\n{range_list[1]}\n{range_list[2]}')
-    if len(range_list) == 4:
-        print(f'{player_pos}:\n{range_list[0]}\n{range_list[1]}\n{range_list[2]}\n{range_list[3]}')
+while player_hand != 'q':
+    if len(player_hand) == 2:
+        player_hand = player_hand.upper()
+    if len(player_hand) == 3:
+        player_hand = player_hand[:2].upper() + player_hand[2].lower()
+    if player_hand in walker_data.keys():
+        opt_moves = walker_data[player_hand]
+        pos_names = walker_data['hand']
+        pad = len(max(opt_moves + pos_names, key=len))
+        pad_mve = [i.strip().ljust(pad + 1, ' ') for i in opt_moves]
+        pad_pos = [i.strip().ljust(pad + 1, ' ') for i in pos_names]
+        print(f'{player_hand}:')
+        print(f'{''.join(pad_pos)}\n{''.join(pad_mve)}\n')
+        print(f'{''.join(pad_pos)}\n{''.join(pad_mve)}\n')
+        print(f'{''.join(pad_pos)}\n{''.join(pad_mve)}\n')
+        print(f'{''.join(pad_pos)}\n{''.join(pad_mve)}\n')
+    player_hand = input('Hand> ')
