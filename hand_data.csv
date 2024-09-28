@@ -1,170 +1,170 @@
-hand,sb_15_rfi,bn_15_rfi,co_15_rfi,hj_15_rfi,lj_15_rfi,utg2_15_rfi,utg1_15_rfi,utg0_15_rfi
-AA,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x
-AKs,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x
-AQs,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x
-AJs,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x
-ATs,10% All-in 90% limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x
-A9s,60% All-in 40% limp,60% All-in 40% Raise 2x,Raise 2x,Raise 2x,60% All-in 40% Raise 2x,Raise 2x,Raise 2x,Raise 2x
-A8s,60% All-in 40% limp,50% All-in 50% Raise 2x,Raise 2x,Raise 2x,40% All-in 60% Raise 2x,Raise 2x,Raise 2x,Raise 2x
-A7s,50% All-in 50% limp,60% All-in 40% Raise 2x,Raise 2x,50% All-in 50% Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x
-A6s,Limp,80% All-in 20% Raise 2x,All-in,Raise 2x,Raise 2x,Raise 2x,Raise 2x,70% Raise 2x 30% Fold
-A5s,Limp,80% All-in 20% Raise 2x,All-in,All-in,Raise 2x,Raise 2x,Raise 2x,60% Raise 2x 40% Fold
-A4s,Limp,All-in,All-in,90% All-in 10% Raise 2x,Raise 2x,30% Raise 2x 70% Fold,Fold,Fold
-A3s,Limp,All-in,All-in,30% All-in 70% Raise 2x,30% Raise 2x 70% Fold,Fold,Fold,Fold
-A2s,20% All-in 80% limp,All-in,All-in,70% Raise 2x 30% Fold,Fold,Fold,Fold,Fold
-AKo,90% All-in 10% limp,10% All-in 90% Raise 2x,Raise 2x,Raise 2x,10% All-in 90% Raise 2x,30% All-in 70% Raise 2x,<10% All-in >90% Raise 2x,Raise 2x
-KK,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x
-KQs,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x
-KJs,Limp,Raise 2x,Raise 2x,All-in,All-in,60% All-in 40% Raise 2x,30% All-in 70% Raise 2x,Raise 2x
-KTs,Limp,Raise 2x,All-in,All-in,All-in,All-in,30% All-in 70% Raise 2x,Raise 2x
-K9s,Limp,All-in,All-in,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x
-K8s,Limp,Raise 2x,Raise 2x,Raise 2x,90% Raise 2x 10% Fold,70% Raise 2x 30% Fold,70% Raise 2x 30% Fold,40% Raise 2x 60% Fold
-K7s,<10% All-in >90% Limp,Raise 2x,Raise 2x,40% Raise 2x 60% Fold,30% Raise 2x 70% Fold,Fold,Fold,Fold
-K6s,10% All-in 90% limp,Raise 2x,Fold,Fold,Fold,Fold,Fold,Fold
-K5s,<10% All-in >90% Limp,Raise 2x,<10% Raise 2x >90% Fold,Fold,Fold,Fold,Fold,Fold
-K4s,Limp,Raise 2x,Fold,Fold,Fold,Fold,Fold,Fold
-K3s,Limp,90% Raise 2x 10% Fold,Fold,Fold,Fold,Fold,Fold,Fold
-K2s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-AQo,All-in,60% All-in 40% Raise 2x,80% All-in 20% Raise 2x,90% All-in 10% Raise 2x,90% All-in 10% Raise 2x,40% All-in 60% Raise 2x,20% All-in 80% Raise 2x,Raise 2x
-KQo,Limp,All-in,All-in,80% All-in 20% Raise 2x,60% All-in 40% Raise 2x,10% All-in 90% Raise 2x,Raise 2x,Raise 2x
-QQ,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x
-QJs,Limp,Raise 2x,All-in,All-in,All-in,50% All-in 50% Raise 2x,Raise 2x,Raise 2x
-QTs,Limp,20% All-in 80% Raise 2x,All-in,All-in,70% All-in 30% Raise 2x,Raise 2x,Raise 2x,Raise 2x
-Q9s,Limp,All-in,30% All-in 70% Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x
-Q8s,Limp,Raise 2x,Raise 2x,Raise 2x,50% Raise 2x 50% Fold,Fold,Fold,Fold
-Q7s,Limp,Raise 2x,>90% Raise 2x <10% Fold,Fold,Fold,Fold,Fold,Fold
-Q6s,50% All-in 50% limp,Raise 2x,Fold,Fold,Fold,Fold,Fold,Fold
-Q5s,50% All-in 50% limp,Raise 2x,Fold,Fold,Fold,Fold,Fold,Fold
-Q4s,Limp,70% Raise 2x 30% Fold,Fold,Fold,Fold,Fold,Fold,Fold
-Q3s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-Q2s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-AJo,All-in,All-in,>90% All-in <10% Raise 2x,80% All-in 20% Raise 2x,70% All-in 30% Raise 2x,50% All-in 50% Raise 2x,10% All-in 90% Raise 2x,Raise 2x
-KJo,70% All-in 30% Limp,All-in,80% All-in 20% Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,60% Raise 2x 40% Fold
-QJo,60% All-in 40% limp,All-in,40% All-in 60% Raise 2x,Raise 2x,Raise 2x,Raise 2x,40% Raise 2x 60% Fold,10% Raise 2x 90% Fold
-JJ,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x
-JTs,Limp,All-in,All-in,All-in,All-in,50% All-in 50% Raise 2x,Raise 2x,Raise 2x
-J9s,Limp,All-in,All-in,Raise 2x,Raise 2x,40% Raise 2x 60% Fold,30% Raise 2x 70% Fold,20% Raise 2x 80% Fold
-J8s,40% All-in 60% Limp,Raise 2x,Raise 2x,Fold,Fold,Fold,Fold,Fold
-J7s,60% All-in 40% limp,Raise 2x,Fold,Fold,Fold,Fold,Fold,Fold
-J6s,30% All-in 70% Limp,Raise 2x,Fold,Fold,Fold,Fold,Fold,Fold
-J5s,50% All-in 50% limp,50% Raise 2x 50% Fold,Fold,Fold,Fold,Fold,Fold,Fold
-J4s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-J3s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-J2s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-ATo,All-in,All-in,All-in,70% All-in 30% Raise 2x,30% All-in 70% Raise 2x,Raise 2x,Raise 2x,Raise 2x
-KTo,50% All-in 50% limp,90% All-in 10% Raise 2x,Raise 2x,Raise 2x,90% Raise 2x 10% Fold,40% Raise 2x 60% Fold,Fold,Fold
-QTo,30% All-in 70% Limp,70% All-in 30% Raise 2x,Raise 2x,Raise 2x,70% Raise 2x 30% Fold,Fold,Fold,Fold
-JTo,Limp,90% All-in 10% Raise 2x,Raise 2x,70% Raise 2x 30% Fold,<10% Raise 2x >90% Fold,Fold,Fold,Fold
-TT,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x
-T9s,Limp,All-in,All-in,60% All-in 40% Raise 2x,Raise 2x,80% Raise 2x 20% Fold,60% Raise 2x 40% Fold,40% Raise 2x 60% Fold
-T8s,50% All-in 50% limp,All-in,Raise 2x,Fold,Fold,Fold,Fold,Fold
-T7s,70% All-in 30% Limp,Raise 2x,Fold,Fold,Fold,Fold,Fold,Fold
-T6s,40% All-in 60% Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-T5s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-T4s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-T3s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-T2s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-A9o,All-in,All-in,All-in,60% All-in 40% Raise 2x,Raise 2x,80% Raise 2x 20% Fold,30% Raise 2x 70% Fold,Fold
-K9o,60% All-in 40% limp,Raise 2x,Raise 2x,Fold,Fold,Fold,Fold,Fold
-Q9o,Limp,Raise 2x,30% Raise 2x 70% Fold,Fold,Fold,Fold,Fold,Fold
-J9o,Limp,Raise 2x,30% Raise 2x 70% Fold,Fold,Fold,Fold,Fold,Fold
-T9o,10% All-in 90% limp,Raise 2x,Fold,Fold,Fold,Fold,Fold,Fold
-99,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x
-98s,70% All-in 30% Limp,All-in,Raise 2x,Fold,Fold,Fold,Fold,Fold
-97s,80% All-in 20% Limp,Raise 2x,Fold,Fold,Fold,Fold,Fold,Fold
-96s,50% All-in 50% limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-95s,20% All-in 80% limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-94s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-93s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-92s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-A8o,All-in,All-in,All-in,Raise 2x,40% Raise 2x 60% Fold,Fold,Fold,Fold
-K8o,40% All-in 60% Limp,70% Raise 2x 30% Fold,Fold,Fold,Fold,Fold,Fold,Fold
-Q8o,Limp,20% Raise 2x 80% Fold,Fold,Fold,Fold,Fold,Fold,Fold
-J8o,Limp,20% Raise 2x 80% Fold,Fold,Fold,Fold,Fold,Fold,Fold
-T8o,20% All-in 80% limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-98o,10% All-in 90% limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-88,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x
-87s,All-in,Raise 2x,Fold,Fold,Fold,Fold,Fold,Fold
-86s,70% All-in 30% Limp,20% Raise 2x 80% Fold,Fold,Fold,Fold,Fold,Fold,Fold
-85s,50% All-in 50% limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-84s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-83s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-82s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-A7o,All-in,All-in,80% All-in 20% Raise 2x,60% Raise 2x 40% Fold,Fold,Fold,Fold,Fold
-K7o,70% All-in 30% Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-Q7o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-J7o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-T7o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-97o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-87o,60% All-in 40% limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-77,60% All-in 40% limp,30% All-in 70% Raise 2x,50% All-in 50% Raise 2x,10% All-in 90% Raise 2x,30% All-in 70% Raise 2x,40% All-in 60% Raise 2x,20% All-in 80% Raise 2x,Raise 2x
-76s,All-in,10% Raise 2x 90% Fold,Fold,Fold,Fold,Fold,Fold,Fold
-75s,70% All-in 30% Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-74s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-73s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-72s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-A6o,All-in,All-in,Raise 2x,Fold,Fold,Fold,Fold,Fold
-K6o,70% All-in 30% Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-Q6o,50% All-in 50% limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-J6o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-T6o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-96o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-86o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-76o,20% All-in 80% limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-66,All-in,All-in,All-in,90% All-in 10% Raise 2x,60% All-in 40% Raise 2x,40% All-in 60% Raise 2x,80% Raise 2x 20% Fold,10% Raise 2x 90% Fold
-65s,70% All-in 30% Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-64s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-63s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-62s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-A5o,All-in,All-in,40% All-in 60% Raise 2x,Fold,Fold,Fold,Fold,Fold
-K5o,60% All-in 40% limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-Q5o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-J5o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-T5o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-95o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-85o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-75o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-65o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-55,All-in,All-in,All-in,All-in,70% All-in 30% Raise 2x,20% Raise 2x 80% FOld,Fold,Fold
-54s,30% All-in 70% Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-53s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-52s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-A4o,All-in,All-in,50% Raise 2x 50% Fold,Fold,Fold,Fold,Fold,Fold
-K4o,50% All-in 50% limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-Q4o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-J4o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-T4o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-94o,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-84o,<10% Limp >90% Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-74o,50% Limp 50% Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-64o,60% Limp 40% Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-54o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-44,All-in,All-in,All-in,All-in,Fold,Fold,Fold,Fold
-43s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-42s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-A3o,All-in,90% All-in 10% Raise 2x,Fold,Fold,Fold,Fold,Fold,Fold
-K3o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-Q3o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-J3o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-T3o,90% Limp 10% Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-93o,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-83o,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-73o,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-63o,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-53o,40% Limp 60% Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-43o,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-33,All-in,All-in,All-in,60% All-in 40% Fold,Fold,Fold,Fold,Fold
-32s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-A2o,All-in,80% All-in 20% Raise 2x,Fold,Fold,Fold,Fold,Fold,Fold
-K2o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-Q2o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-J2o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-T2o,20% Limp 80% Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-92o,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-82o,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-72o,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-62o,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-52o,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-42o,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-32o,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold
-22,All-in,All-in,All-in,Fold,Fold,Fold,Fold,Fold
+hand,sb_15_rfi,bn_15_rfi,co_15_rfi,hj_15_rfi,lj_15_rfi,utg2_15_rfi,utg1_15_rfi,utg0_15_rfi,hand,sb_25_rfi,bn_25_rfi,co_25_rfi,hj_25_rfi,lj_25_rfi,utg2_25_rfi,utg1_25_rfi,utg0_25_rfi
+AA,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,AA,Raise 3.3x,,,,,,,
+AKs,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,AKs,Raise 3.3x,,,,,,,
+AQs,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,AQs,>90% Raise 3.3x <10% Limp,,,,,,,
+AJs,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,AJs,90% Raise 3.3x 10% Limp,,,,,,,
+ATs,10% All-in 90% limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,ATs,Raise 3.3x,,,,,,,
+A9s,60% All-in 40% limp,60% All-in 40% Raise 2x,Raise 2x,Raise 2x,60% All-in 40% Raise 2x,Raise 2x,Raise 2x,Raise 2x,A9s,80% Raise 3.3x 20% Limp,,,,,,,
+A8s,60% All-in 40% limp,50% All-in 50% Raise 2x,Raise 2x,Raise 2x,40% All-in 60% Raise 2x,Raise 2x,Raise 2x,Raise 2x,A8s,80% Raise 3.3x 20% Limp,,,,,,,
+A7s,50% All-in 50% limp,60% All-in 40% Raise 2x,Raise 2x,50% All-in 50% Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,A7s,80% Raise 3.3x 20% Limp,,,,,,,
+A6s,Limp,80% All-in 20% Raise 2x,All-in,Raise 2x,Raise 2x,Raise 2x,Raise 2x,70% Raise 2x 30% Fold,A6s,60% Raise 3.3x 40% Limp,,,,,,,
+A5s,Limp,80% All-in 20% Raise 2x,All-in,All-in,Raise 2x,Raise 2x,Raise 2x,60% Raise 2x 40% Fold,A5s,40% Raise 3.3x 60% Limp,,,,,,,
+A4s,Limp,All-in,All-in,90% All-in 10% Raise 2x,Raise 2x,30% Raise 2x 70% Fold,Fold,Fold,A4s,Limp,,,,,,,
+A3s,Limp,All-in,All-in,30% All-in 70% Raise 2x,30% Raise 2x 70% Fold,Fold,Fold,Fold,A3s,Limp,,,,,,,
+A2s,20% All-in 80% limp,All-in,All-in,70% Raise 2x 30% Fold,Fold,Fold,Fold,Fold,A2s,Limp,,,,,,,
+AKo,90% All-in 10% limp,10% All-in 90% Raise 2x,Raise 2x,Raise 2x,10% All-in 90% Raise 2x,30% All-in 70% Raise 2x,<10% All-in >90% Raise 2x,Raise 2x,AKo,70% Raise 3.3x 30% Limp,,,,,,,
+KK,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,KK,Raise 3.3x,,,,,,,
+KQs,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,KQs,70% Raise 3.3x 30% Limp,,,,,,,
+KJs,Limp,Raise 2x,Raise 2x,All-in,All-in,60% All-in 40% Raise 2x,30% All-in 70% Raise 2x,Raise 2x,KJs,60% Raise 3.3x 40% Limp,,,,,,,
+KTs,Limp,Raise 2x,All-in,All-in,All-in,All-in,30% All-in 70% Raise 2x,Raise 2x,KTs,40% Raise 3.3x 60% Limp,,,,,,,
+K9s,Limp,All-in,All-in,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,K9s,<10% Raise 3.3x >90% Limp,,,,,,,
+K8s,Limp,Raise 2x,Raise 2x,Raise 2x,90% Raise 2x 10% Fold,70% Raise 2x 30% Fold,70% Raise 2x 30% Fold,40% Raise 2x 60% Fold,K8s,Limp,,,,,,,
+K7s,<10% All-in >90% Limp,Raise 2x,Raise 2x,40% Raise 2x 60% Fold,30% Raise 2x 70% Fold,Fold,Fold,Fold,K7s,Limp,,,,,,,
+K6s,10% All-in 90% limp,Raise 2x,Fold,Fold,Fold,Fold,Fold,Fold,K6s,Limp,,,,,,,
+K5s,<10% All-in >90% Limp,Raise 2x,<10% Raise 2x >90% Fold,Fold,Fold,Fold,Fold,Fold,K5s,Limp,,,,,,,
+K4s,Limp,Raise 2x,Fold,Fold,Fold,Fold,Fold,Fold,K4s,Limp,,,,,,,
+K3s,Limp,90% Raise 2x 10% Fold,Fold,Fold,Fold,Fold,Fold,Fold,K3s,20% Raise 3.3x 80% Limp,,,,,,,
+K2s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,K2s,20% Raise 3.3x 80% Limp,,,,,,,
+AQo,All-in,60% All-in 40% Raise 2x,80% All-in 20% Raise 2x,90% All-in 10% Raise 2x,90% All-in 10% Raise 2x,40% All-in 60% Raise 2x,20% All-in 80% Raise 2x,Raise 2x,AQo,30% Raise 3.3x 70% Limp,,,,,,,
+KQo,Limp,All-in,All-in,80% All-in 20% Raise 2x,60% All-in 40% Raise 2x,10% All-in 90% Raise 2x,Raise 2x,Raise 2x,KQo,60% Raise 3.3x 40% Limp,,,,,,,
+QQ,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,QQ,Raise 3.3x,,,,,,,
+QJs,Limp,Raise 2x,All-in,All-in,All-in,50% All-in 50% Raise 2x,Raise 2x,Raise 2x,QJs,Limp,,,,,,,
+QTs,Limp,20% All-in 80% Raise 2x,All-in,All-in,70% All-in 30% Raise 2x,Raise 2x,Raise 2x,Raise 2x,QTs,Limp,,,,,,,
+Q9s,Limp,All-in,30% All-in 70% Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Q9s,Limp,,,,,,,
+Q8s,Limp,Raise 2x,Raise 2x,Raise 2x,50% Raise 2x 50% Fold,Fold,Fold,Fold,Q8s,Limp,,,,,,,
+Q7s,Limp,Raise 2x,>90% Raise 2x <10% Fold,Fold,Fold,Fold,Fold,Fold,Q7s,10% Raise 3.3x 90% Limp,,,,,,,
+Q6s,50% All-in 50% limp,Raise 2x,Fold,Fold,Fold,Fold,Fold,Fold,Q6s,10% Raise 3.3x 90% Limp,,,,,,,
+Q5s,50% All-in 50% limp,Raise 2x,Fold,Fold,Fold,Fold,Fold,Fold,Q5s,20% Raise 3.3x 80% Limp,,,,,,,
+Q4s,Limp,70% Raise 2x 30% Fold,Fold,Fold,Fold,Fold,Fold,Fold,Q4s,40% Raise 3.3x 60% Limp,,,,,,,
+Q3s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Q3s,40% Raise 3.3x 60% Limp,,,,,,,
+Q2s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Q2s,40% Raise 3.3x 60% Limp,,,,,,,
+AJo,All-in,All-in,>90% All-in <10% Raise 2x,80% All-in 20% Raise 2x,70% All-in 30% Raise 2x,50% All-in 50% Raise 2x,10% All-in 90% Raise 2x,Raise 2x,AJo,30% Raise 3.3x 70% Limp,,,,,,,
+KJo,70% All-in 30% Limp,All-in,80% All-in 20% Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,60% Raise 2x 40% Fold,KJo,40% Raise 3.3x 60% Limp,,,,,,,
+QJo,60% All-in 40% limp,All-in,40% All-in 60% Raise 2x,Raise 2x,Raise 2x,Raise 2x,40% Raise 2x 60% Fold,10% Raise 2x 90% Fold,QJo,50% Raise 3.3x 50% Limp,,,,,,,
+JJ,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,JJ,80% Raise 3.3x 20% Limp,,,,,,,
+JTs,Limp,All-in,All-in,All-in,All-in,50% All-in 50% Raise 2x,Raise 2x,Raise 2x,JTs,10% Raise 3.3x 90% Limp,,,,,,,
+J9s,Limp,All-in,All-in,Raise 2x,Raise 2x,40% Raise 2x 60% Fold,30% Raise 2x 70% Fold,20% Raise 2x 80% Fold,J9s,<10% Raise 3.3x >90% Limp,,,,,,,
+J8s,40% All-in 60% Limp,Raise 2x,Raise 2x,Fold,Fold,Fold,Fold,Fold,J8s,<10% Raise 3.3x >90% Limp,,,,,,,
+J7s,60% All-in 40% limp,Raise 2x,Fold,Fold,Fold,Fold,Fold,Fold,J7s,20% Raise 3.3x 80% Limp,,,,,,,
+J6s,30% All-in 70% Limp,Raise 2x,Fold,Fold,Fold,Fold,Fold,Fold,J6s,40% Raise 3.3x 60% Limp,,,,,,,
+J5s,50% All-in 50% limp,50% Raise 2x 50% Fold,Fold,Fold,Fold,Fold,Fold,Fold,J5s,50% Raise 3.3x 50% Limp,,,,,,,
+J4s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,J4s,70% Raise 3.3x 30% Limp,,,,,,,
+J3s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,J3s,70% Raise 3.3x 30% Limp,,,,,,,
+J2s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,J2s,70% Raise 3.3x 30% Limp,,,,,,,
+ATo,All-in,All-in,All-in,70% All-in 30% Raise 2x,30% All-in 70% Raise 2x,Raise 2x,Raise 2x,Raise 2x,ATo,40% Raise 3.3x 60% Limp,,,,,,,
+KTo,50% All-in 50% limp,90% All-in 10% Raise 2x,Raise 2x,Raise 2x,90% Raise 2x 10% Fold,40% Raise 2x 60% Fold,Fold,Fold,KTo,50% Raise 3.3x 50% Limp,,,,,,,
+QTo,30% All-in 70% Limp,70% All-in 30% Raise 2x,Raise 2x,Raise 2x,70% Raise 2x 30% Fold,Fold,Fold,Fold,QTo,40% Raise 3.3x 60% Limp,,,,,,,
+JTo,Limp,90% All-in 10% Raise 2x,Raise 2x,70% Raise 2x 30% Fold,<10% Raise 2x >90% Fold,Fold,Fold,Fold,JTo,40% Raise 3.3x 60% Limp,,,,,,,
+TT,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,TT,Raise 3.3x,,,,,,,
+T9s,Limp,All-in,All-in,60% All-in 40% Raise 2x,Raise 2x,80% Raise 2x 20% Fold,60% Raise 2x 40% Fold,40% Raise 2x 60% Fold,T9s,Limp,,,,,,,
+T8s,50% All-in 50% limp,All-in,Raise 2x,Fold,Fold,Fold,Fold,Fold,T8s,<10% Raise 3.3x >90% Limp,,,,,,,
+T7s,70% All-in 30% Limp,Raise 2x,Fold,Fold,Fold,Fold,Fold,Fold,T7s,20% Raise 3.3x 80% Limp,,,,,,,
+T6s,40% All-in 60% Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,T6s,50% Raise 3.3x 50% Limp,,,,,,,
+T5s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,T5s,60% Raise 3.3x 40% Limp,,,,,,,
+T4s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,T4s,70% Raise 3.3x 30% Limp,,,,,,,
+T3s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,T3s,70% Raise 3.3x 30% Limp,,,,,,,
+T2s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,T2s,70% Raise 3.3x 30% Limp,,,,,,,
+A9o,All-in,All-in,All-in,60% All-in 40% Raise 2x,Raise 2x,80% Raise 2x 20% Fold,30% Raise 2x 70% Fold,Fold,A9o,25% All-in 25% Raise 3.3x 50% Limp,,,,,,,
+K9o,60% All-in 40% limp,Raise 2x,Raise 2x,Fold,Fold,Fold,Fold,Fold,K9o,70% Raise 3.3x 30% Limp,,,,,,,
+Q9o,Limp,Raise 2x,30% Raise 2x 70% Fold,Fold,Fold,Fold,Fold,Fold,Q9o,60% Raise 3.3x 40% Limp,,,,,,,
+J9o,Limp,Raise 2x,30% Raise 2x 70% Fold,Fold,Fold,Fold,Fold,Fold,J9o,60% Raise 3.3x 40% Limp,,,,,,,
+T9o,10% All-in 90% limp,Raise 2x,Fold,Fold,Fold,Fold,Fold,Fold,T9o,50% Raise 3.3x 50% Limp,,,,,,,
+99,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,99,70% Raise 3.3x 30% Limp,,,,,,,
+98s,70% All-in 30% Limp,All-in,Raise 2x,Fold,Fold,Fold,Fold,Fold,98s,Limp,,,,,,,
+97s,80% All-in 20% Limp,Raise 2x,Fold,Fold,Fold,Fold,Fold,Fold,97s,10% Raise 3.3x 90% Limp,,,,,,,
+96s,50% All-in 50% limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,96s,40% Raise 3.3x 60% Limp,,,,,,,
+95s,20% All-in 80% limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,95s,60% Raise 3.3x 40% Limp,,,,,,,
+94s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,94s,70% Raise 3.3x 30% Limp,,,,,,,
+93s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,93s,50% Raise 3.3x 50% Limp,,,,,,,
+92s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,92s,20% Raise 3.3x 80% Limp,,,,,,,
+A8o,All-in,All-in,All-in,Raise 2x,40% Raise 2x 60% Fold,Fold,Fold,Fold,A8o,40% All-in 40% Raise 3.3x 20% Limp,,,,,,,
+K8o,40% All-in 60% Limp,70% Raise 2x 30% Fold,Fold,Fold,Fold,Fold,Fold,Fold,K8o,60% Raise 3.3x 40% Limp,,,,,,,
+Q8o,Limp,20% Raise 2x 80% Fold,Fold,Fold,Fold,Fold,Fold,Fold,Q8o,60% Raise 3.3x 40% Limp,,,,,,,
+J8o,Limp,20% Raise 2x 80% Fold,Fold,Fold,Fold,Fold,Fold,Fold,J8o,60% Raise 3.3x 40% Limp,,,,,,,
+T8o,20% All-in 80% limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,T8o,50% Raise 3.3x 50% Limp,,,,,,,
+98o,10% All-in 90% limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,98o,40% Raise 3.3x 60% Limp,,,,,,,
+88,Limp,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,Raise 2x,88,70% Raise 3.3x 30% Limp,,,,,,,
+87s,All-in,Raise 2x,Fold,Fold,Fold,Fold,Fold,Fold,87s,10% Raise 3.3x 90% Limp,,,,,,,
+86s,70% All-in 30% Limp,20% Raise 2x 80% Fold,Fold,Fold,Fold,Fold,Fold,Fold,86s,30% Raise 3.3x 70% Limp,,,,,,,
+85s,50% All-in 50% limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,85s,50% Raise 3.3x 50% Limp,,,,,,,
+84s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,84s,60% Raise 3.3x 40% Limp,,,,,,,
+83s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,83s,10% Raise 3.3x 90% Limp,,,,,,,
+82s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,82s,Limp,,,,,,,
+A7o,All-in,All-in,80% All-in 20% Raise 2x,60% Raise 2x 40% Fold,Fold,Fold,Fold,Fold,A7o,70% Raise 3.3x 30% Limp,,,,,,,
+K7o,70% All-in 30% Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,K7o,60% Raise 3.3x 40% Limp,,,,,,,
+Q7o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Q7o,50% Raise 3.3x 50% Limp,,,,,,,
+J7o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,J7o,50% Raise 3.3x 50% Limp,,,,,,,
+T7o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,T7o,40% Raise 3.3x 60% Limp,,,,,,,
+97o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,97o,30% Raise 3.3x 70% Limp,,,,,,,
+87o,60% All-in 40% limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,87o,20% Raise 3.3x 80% Limp,,,,,,,
+77,60% All-in 40% limp,30% All-in 70% Raise 2x,50% All-in 50% Raise 2x,10% All-in 90% Raise 2x,30% All-in 70% Raise 2x,40% All-in 60% Raise 2x,20% All-in 80% Raise 2x,Raise 2x,77,60% Raise 3.3x 40% Limp,,,,,,,
+76s,All-in,10% Raise 2x 90% Fold,Fold,Fold,Fold,Fold,Fold,Fold,76s,30% Raise 3.3x 70% Limp,,,,,,,
+75s,70% All-in 30% Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,75s,40% Raise 3.3x 60% Limp,,,,,,,
+74s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,74s,60% Raise 3.3x 40% Limp,,,,,,,
+73s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,73s,30% Raise 3.3x 70% Limp,,,,,,,
+72s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,72s,Limp,,,,,,,
+A6o,All-in,All-in,Raise 2x,Fold,Fold,Fold,Fold,Fold,A6o,70% Raise 3.3x 30% Limp,,,,,,,
+K6o,70% All-in 30% Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,K6o,60% Raise 3.3x 40% Limp,,,,,,,
+Q6o,50% All-in 50% limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Q6o,50% Raise 3.3x 50% Limp,,,,,,,
+J6o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,J6o,10% Raise 3.3x 90% Limp,,,,,,,
+T6o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,T6o,Limp,,,,,,,
+96o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,96o,<10% Raise 3.3x >90% Limp,,,,,,,
+86o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,86o,<10% Raise 3.3x >90% Limp,,,,,,,
+76o,20% All-in 80% limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,76o,20% Raise 3.3x 80% Limp,,,,,,,
+66,All-in,All-in,All-in,90% All-in 10% Raise 2x,60% All-in 40% Raise 2x,40% All-in 60% Raise 2x,80% Raise 2x 20% Fold,10% Raise 2x 90% Fold,66,30% Raise 3.3x 70% Limp,,,,,,,
+65s,70% All-in 30% Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,65s,40% Raise 3.3x 60% Limp,,,,,,,
+64s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,64s,60% Raise 3.3x 40% Limp,,,,,,,
+63s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,63s,60% Raise 3.3x 40% Limp,,,,,,,
+62s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,62s,20% Raise 3.3x 80% Limp,,,,,,,
+A5o,All-in,All-in,40% All-in 60% Raise 2x,Fold,Fold,Fold,Fold,Fold,A5o,40% Raise 3.3x 60% Limp,,,,,,,
+K5o,60% All-in 40% limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,K5o,60% Raise 3.3x 40% Limp,,,,,,,
+Q5o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Q5o,40% Raise 3.3x 60% Limp,,,,,,,
+J5o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,J5o,20% Raise 3.3x 80% Limp,,,,,,,
+T5o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,T5o,Limp,,,,,,,
+95o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,95o,60% Limp 40% Fold,,,,,,,
+85o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,85o,80% Limp 20% Fold,,,,,,,
+75o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,75o,Limp,,,,,,,
+65o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,65o,Limp,,,,,,,
+55,All-in,All-in,All-in,All-in,70% All-in 30% Raise 2x,20% Raise 2x 80% FOld,Fold,Fold,55,Limp,,,,,,,
+54s,30% All-in 70% Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,54s,50% Raise 3.3x 50% Limp,,,,,,,
+53s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,53s,50% Raise 3.3x 50% Limp,,,,,,,
+52s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,52s,60% Raise 3.3x 40% Limp,,,,,,,
+A4o,All-in,All-in,50% Raise 2x 50% Fold,Fold,Fold,Fold,Fold,Fold,A4o,40% Raise 3.3x 60% Limp,,,,,,,
+K4o,50% All-in 50% limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,K4o,50% Raise 3.3x 50% Limp,,,,,,,
+Q4o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Q4o,20% Raise 3.3x 80% Limp,,,,,,,
+J4o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,J4o,Limp,,,,,,,
+T4o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,T4o,60% Limp 40% Fold,,,,,,,
+94o,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold,94o,Fold,,,,,,,
+84o,<10% Limp >90% Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold,84o,Fold,,,,,,,
+74o,50% Limp 50% Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold,74o,Fold,,,,,,,
+64o,60% Limp 40% Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold,64o,20% Limp 80% Fold,,,,,,,
+54o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,54o,Limp,,,,,,,
+44,All-in,All-in,All-in,All-in,Fold,Fold,Fold,Fold,44,60% All-in 40% Limp,,,,,,,
+43s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,43s,60% Raise 3.3x 40% Limp,,,,,,,
+42s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,42s,50% Raise 3.3x 50% Limp,,,,,,,
+A3o,All-in,90% All-in 10% Raise 2x,Fold,Fold,Fold,Fold,Fold,Fold,A3o,50% Raise 3.3x 50% Limp,,,,,,,
+K3o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,K3o,30% Raise 3.3x 70% Limp,,,,,,,
+Q3o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Q3o,Limp,,,,,,,
+J3o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,J3o,Limp,,,,,,,
+T3o,90% Limp 10% Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold,T3o,Fold,,,,,,,
+93o,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold,93o,Fold,,,,,,,
+83o,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold,83o,Fold,,,,,,,
+73o,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold,73o,Fold,,,,,,,
+63o,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold,63o,Fold,,,,,,,
+53o,40% Limp 60% Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold,53o,<10% Limp >90% Fold,,,,,,,
+43o,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold,43o,Fold,,,,,,,
+33,All-in,All-in,All-in,60% All-in 40% Fold,Fold,Fold,Fold,Fold,33,All-in,,,,,,,
+32s,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,32s,40% Raise 3.3x 60% Limp,,,,,,,
+A2o,All-in,80% All-in 20% Raise 2x,Fold,Fold,Fold,Fold,Fold,Fold,A2o,40% Raise 3.3x 60% Limp,,,,,,,
+K2o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,K2o,20% Raise 3.3x 80% Limp,,,,,,,
+Q2o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Q2o,Limp,,,,,,,
+J2o,Limp,Fold,Fold,Fold,Fold,Fold,Fold,Fold,J2o,80% Limp 20% Fold,,,,,,,
+T2o,20% Limp 80% Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold,T2o,Fold,,,,,,,
+92o,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold,92o,Fold,,,,,,,
+82o,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold,82o,Fold,,,,,,,
+72o,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold,72o,Fold,,,,,,,
+62o,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold,62o,Fold,,,,,,,
+52o,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold,52o,Fold,,,,,,,
+42o,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold,42o,Fold,,,,,,,
+32o,Fold,Fold,Fold,Fold,Fold,Fold,Fold,Fold,32o,Fold,,,,,,,
+22,All-in,All-in,All-in,Fold,Fold,Fold,Fold,Fold,22,All-in,,,,,,,
