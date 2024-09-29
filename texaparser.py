@@ -105,13 +105,14 @@ fbets_list = []
 vpip_list = []
 for player in name_list:
     n_hand = 0 # hands played
+    n_fold = 0 # hands folded preflop
     n_call = 0 # number of calls
     n_rais = 0 # number of raises
     n_bets = 0 # number of bets
     n_wins = 0 # played hands won
     n_pfrs = 0 # hands raised before flop
     n_flop = 0 # flops seen
-    n_fold = 0 # hands folded on flop
+    n_pofo = 0 # hands folded on flop
     n_chks = 0 # hands checked on flop
     n_flbt = 0 # hands bet on flop
     n_walk = 0 # number of wins uncontested
@@ -125,6 +126,9 @@ for player in name_list:
         if any([player in i for i in h_info['summary']]):
             # Count hand:
             n_hand = n_hand + 1
+            # Count hands folded without bets:
+            if any([player in i and ('foldade innan Flopp (satsade inte)' in i or 'blind) foldade innan Flopp' in i) for i in h_info['summary']]):
+                n_fold = n_fold + 1
             # Count wins:
             if any([player in i and 'vann' in i for i in h_info['summary']]):
                 n_wins = n_wins + 1
@@ -142,7 +146,7 @@ for player in name_list:
                     n_flop = n_flop + 1
                     # Count flops folded:
                     if player + ': fold' in flat_flop:
-                        n_fold = n_fold + 1
+                        n_pofo = n_pofo + 1
                     # Count flops checked on:
                     elif player + ': check' in flat_flop:
                         n_chks = n_chks + 1
@@ -182,14 +186,22 @@ for player in name_list:
             n_rais = n_rais + hand_rais
             n_bets = n_bets + hand_bets
 
-    # Calculate statistics:
-    n_actual = n_hand - n_walk
+    # Calculate vpip:
+    n_actual = n_hand - n_walk # number of hands not won on walk
     vpip_list = vpip_list + [col_num(round(n_vpip / n_actual, 2)) + ' (' + str(n_vpip) + '/' + str(n_actual) + ')'] if n_actual > 0 else vpip_list + [str(0.0) + ' (0/0)']
+    # Calculate aggression:
     n_aggr = n_bets + n_rais
     aggr_list = aggr_list + [col_num(round(n_aggr / n_call, 2)) + ' (' + str(n_aggr) + '/' + str(n_call) + ')'] if n_call > 0 else aggr_list + [str(0.0) + ' (0/0)']
-    winrate_list = winrate_list + [col_num(round(n_wins / n_actual, 2), 'high') + ' (' + str(n_wins) + '/' + str(n_actual) + ')'] if n_actual > 0 else winrate_list + [str(0.0) + ' (0/0)']
-    raise_list = raise_list + [col_num(round(n_pfrs / n_actual, 2), 'high') + ' (' + str(n_pfrs) + '/' + str(n_actual) + ')'] if n_actual > 0 else raise_list + [str(0.0) + ' (0/0)']
-    ffold_list = ffold_list + [col_num(round(n_fold / n_flop, 2), 'low') + ' (' + str(n_fold) + '/' + str(n_flop) + ')'] if n_flop > 0 else ffold_list + [str(0.0) + ' (0/0)']
+    # Calculate winrate:
+    # wins / (hands -walks -folds)
+    n_active = n_actual - n_fold # number of hands not folded and not won on walk
+    winrate_list = winrate_list + [col_num(round(n_wins / n_active, 2), 'high') + ' (' + str(n_wins) + '/' + str(n_active) + ')'] if n_active > 0 else winrate_list + [str(0.0) + ' (0/0)']
+    # Calculate how many preflops were raised (rather than checked or limped):
+    # raises / (hands -walks -folds)
+    raise_list = raise_list + [col_num(round(n_pfrs / n_active, 2), 'high') + ' (' + str(n_pfrs) + '/' + str(n_active) + ')'] if n_active > 0 else raise_list + [str(0.0) + ' (0/0)']
+    # Calculate how many flops were folded when the choice was given:
+    ffold_list = ffold_list + [col_num(round(n_pofo / n_flop, 2), 'low') + ' (' + str(n_pofo) + '/' + str(n_flop) + ')'] if n_flop > 0 else ffold_list + [str(0.0) + ' (0/0)']
+    # Calculate how many flops were bet on when the choice was given:
     n_btab = n_chks + n_flbt # number of flops which could have been bet on
     fbets_list = fbets_list + [col_num(round(n_flbt / n_btab, 2), 'high') + ' (' + str(n_flbt) + '/' + str(n_btab) + ')'] if n_btab > 0 else fbets_list + [str(0.0) + ' (0/0)']
 
