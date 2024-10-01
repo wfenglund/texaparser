@@ -82,7 +82,8 @@ for entry in hh_dict[hand]['prehand']:
         name = re.sub(r' står över', '', name)
         name = re.sub(r' ute ur handen \(flyttade från annat bord till small blind\)', '', name)
         name_list.append(name.strip())
-        chip_count = re.sub(r'.+ \(', '', entry)
+#         chip_count = re.sub(r'.+ \(', '', entry)
+        chip_count = re.sub(r'^([^\(])+?\(', '', entry) # match anything except ( as well as one (
         chip_count = re.sub(r' i marker.*', '', chip_count) # remove 'i marker' and more if the player is sitting it out
         chip_list.append(float(chip_count.replace('$', '')))
     elif 'lägger small blind' in entry:
