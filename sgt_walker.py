@@ -1,6 +1,6 @@
 print('Welcome to Sgt Walker - The Texas (Holdem Starting Hand) Ranger')
 
-with open('hand_data.csv') as walker_input:
+with open('./data/hand_data.csv') as walker_input:
     walker_data = {}
     for line in walker_input:
         walker_data[line.split(',')[0]] = line.split(',')[1:]
