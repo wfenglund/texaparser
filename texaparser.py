@@ -42,28 +42,28 @@ with open(hand_history_file) as hh_file:
             hh_dict[hand][state] = hh_dict[hand][state] + [row]
 
 # Color number function:
-def col_num(number, target = 'low'):
+def col_num(number, target = 'low', thresholds = [0.25, 0.5, 0.75]):
     if target == 'low':
-        if number > 0.75:
+        if number > thresholds[2]:
             number = str(number)
             return '\x1b[0;31;40m' + number + '\x1b[0m'
-        elif number > 0.50:
+        elif number > thresholds[1]:
             number = str(number)
             return '\x1b[0;33;40m' + number + '\x1b[0m'
-        elif number > 0.25:
+        elif number > thresholds[0]:
             number = str(number)
             return number
         else:
             number = str(number)
             return '\x1b[0;36;40m' + number + '\x1b[0m'
     else:
-        if number < 0.25:
+        if number < thresholds[0]:
             number = str(number)
             return '\x1b[0;31;40m' + number + '\x1b[0m'
-        elif number < 0.50:
+        elif number < thresholds[1]:
             number = str(number)
             return '\x1b[0;33;40m' + number + '\x1b[0m'
-        elif number < 0.75:
+        elif number < thresholds[2]:
             number = str(number)
             return number
         else:
@@ -189,10 +189,10 @@ for player in name_list:
 
     # Calculate vpip:
     n_actual = n_hand - n_walk # number of hands not won on walk
-    vpip_list = vpip_list + [col_num(round(n_vpip / n_actual, 2)) + ' (' + str(n_vpip) + '/' + str(n_actual) + ')'] if n_actual > 0 else vpip_list + [str(0.0) + ' (0/0)']
+    vpip_list = vpip_list + [col_num(round(n_vpip / n_actual, 2), 'low') + ' (' + str(n_vpip) + '/' + str(n_actual) + ')'] if n_actual > 0 else vpip_list + [str(0.0) + ' (0/0)']
     # Calculate aggression:
     n_aggr = n_bets + n_rais
-    aggr_list = aggr_list + [col_num(round(n_aggr / n_call, 2)) + ' (' + str(n_aggr) + '/' + str(n_call) + ')'] if n_call > 0 else aggr_list + [str(0.0) + ' (0/0)']
+    aggr_list = aggr_list + [col_num(round(n_aggr / n_call, 2), 'low') + ' (' + str(n_aggr) + '/' + str(n_call) + ')'] if n_call > 0 else aggr_list + [str(0.0) + ' (0/0)']
     # Calculate winrate:
     # wins / (hands -walks -folds)
     n_active = n_actual - n_fold # number of hands not folded and not won on walk
