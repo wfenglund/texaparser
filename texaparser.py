@@ -191,6 +191,7 @@ for player in name_list:
     n_actual = n_hand - n_walk # number of hands not won on walk
     vpip_list = vpip_list + [col_num(round(n_vpip / n_actual, 2), 'low') + ' (' + str(n_vpip) + '/' + str(n_actual) + ')'] if n_actual > 0 else vpip_list + [str(0.0) + ' (0/0)']
     # Calculate aggression:
+    # (all bets + all raises) / all calls
     n_aggr = n_bets + n_rais
     aggr_list = aggr_list + [col_num(round(n_aggr / n_call, 2), 'low') + ' (' + str(n_aggr) + '/' + str(n_call) + ')'] if n_call > 0 else aggr_list + [str(0.0) + ' (0/0)']
     # Calculate winrate:
