@@ -193,7 +193,7 @@ for player in name_list:
     # Calculate aggression:
     # (all bets + all raises) / all calls
     n_aggr = n_bets + n_rais
-    aggr_list = aggr_list + [col_num(round(n_aggr / n_call, 2), 'low') + ' (' + str(n_aggr) + '/' + str(n_call) + ')'] if n_call > 0 else aggr_list + [str(0.0) + ' (0/0)']
+    aggr_list = aggr_list + [col_num(round(n_aggr / n_call, 2), 'low', [1.5, 2.5, 3.5]) + ' (' + str(n_aggr) + '/' + str(n_call) + ')'] if n_call > 0 else aggr_list + [str(0.0) + ' (0/0)']
     # Calculate winrate:
     # wins / (hands -walks -folds)
     n_active = n_actual - n_fold # number of hands not folded and not won on walk
