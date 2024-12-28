@@ -1,4 +1,5 @@
 import sys
+import json
 import os
 import re
 
@@ -8,7 +9,11 @@ hand_history_path = sys.argv[2]
 hand_history_file = hand_history_path + '/' + sys.argv[3]
 
 # Parse hand history data:
-hh_dict = {}
+if os.path.isfile('.hand_history.json') == True: # if hand history database exists
+    with open('.hand_history.json') as hh_in:
+        hh_dict = json.load(hh_in)
+else: # if no hand history database exists
+    hh_dict = {}
 hand = ''
 state = ''
 
