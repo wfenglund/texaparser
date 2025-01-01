@@ -1,8 +1,12 @@
+import sys
 import os
 import re
 
 tourn_hist_dir = '/home/william/.wine/drive_c/users/william/AppData/Local/PokerStars.SE/TournSummary/GoldKruger/'
-tourn_filt = ''
+if len(sys.argv) > 1:
+    tourn_filt = sys.argv[1]
+else:
+    tourn_filt = ''
 player = 'GoldKruger'
 
 tourn_list = os.listdir(tourn_hist_dir)
