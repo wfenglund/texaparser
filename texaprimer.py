@@ -5,10 +5,14 @@ import json
 # Get hand history path and file names:
 hand_history_path = sys.argv[1]
 current_tournament = sys.argv[2]
+filter_term = '' if len(sys.argv) == 3 else sys.argv[3]
 hh_file_list = os.listdir(hand_history_path)
 
 # Remove current tournament from hh_file_list:
 hh_file_list = [i for i in hh_file_list if i != current_tournament]
+
+# Sift out desired tournaments:
+hh_file_list = [j for j in hh_file_list if filter_term in j]
 
 # Parse hand history data:
 hh_dict = {}
